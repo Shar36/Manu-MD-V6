@@ -4,6 +4,17 @@
 <p align="center">
 <img src="https://telegra.ph/file/33e5f1bfd36ea02f8b062.jpg" />
 </p>
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+>𝗠𝗔𝗡𝗨-𝗠𝗗-𝗩❻ is based on :
+>- [Ethix-MD](https://github.com/Ethix-Xsid/Ethix-MD) by [Ethix-Xsid](https://github.com/Ethix-Xsid) (License: MIT LICENSE)
+>
+> :unicorn: Don't forget to check out! :point_right: [Ethix-MD](https://github.com/Ethix-Xsid)
+</p>
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
    <p align="center">
 Manul Official Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/manulofficial7" target="_blank">ManulOfficial</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
@@ -77,39 +88,56 @@ https://github.com/manulofficial7/GitHub-Workflow-Code
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
+###  Deploy on VPS or PC (Example here as in Ubuntu)
 
-## `For Termux/Ssh/Ubuntu`
-```bash
-apt update
-apt upgrade
-pkg update && pkg upgrade
-pkg install bash
-pkg install libwebp
-pkg install git -y
-pkg install nodejs -y 
-pkg install ffmpeg -y 
-pkg install wget
-pkg install imagemagick -y
-git clone https://github.com/manulofficial7/Manu-MD-V6
-yarn install
-npm start
-```
+#### Install with Script
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+- Run the following command:
+  ```sh
+  bash <(curl -fsSL http://bit.ly/43JqREw)
+  ```
 
+#### Install without Script
 
-## `For VPS`
-```bash
-apt install nodejs 
-apt install git 
-apt apt install ffmpeg 
-apt apt install libwebp 
-apt apt install imagrmagick
-apt install bash
-git clone https://github.com/manulofficial7/Manu-MD-V6
-cd Manu-MD-V6
-npm start
-```
+1. **Install Git, ffmpeg, and curl:**
+   ```sh
+   sudo apt -y update && sudo apt -y upgrade
+   sudo apt -y install git ffmpeg curl
+   ```
+
+2. **Install Node.js:**
+   ```sh
+   curl -fsSL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh
+   sudo -E bash nodesource_setup.sh
+   sudo apt-get install -y nodejs
+   ```
+
+3. **Install Yarn:**
+   ```sh
+   sudo npm install -g yarn
+   ```
+
+4. **Install pm2:**
+   ```sh
+   sudo yarn global add pm2
+   ```
+
+5. **Clone Repository and Install Packages:**
+   ```sh
+   git clone https://github.com/manulofficial7/Manu-MD-V6 Manu-MD
+   cd Manu-MD
+   yarn install
+   ```
+
+6. **Start and Stop the Bot:**
+   - To start the bot:
+     ```sh
+     pm2 start . --name Manu-MD --attach --time
+     ```
+   - To stop the bot:
+     ```sh
+     pm2 stop Manu-MD
+     ```
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
